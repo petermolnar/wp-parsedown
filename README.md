@@ -26,4 +26,3 @@ Parse the_content with [Parsedown Extra](http://www.parsedown.org/demo?extra=1) 
 *2014-07-22*
 
 Initial release
-
