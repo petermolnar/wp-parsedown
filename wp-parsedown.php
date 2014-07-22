@@ -163,6 +163,9 @@ class WP_PARSEDOWN extends PluginAbstract {
 				</dd>
 			</dl>
 			</fieldset>
+			<p class="clear">
+				<input class="button-primary" type="submit" name="<?php echo $this->button_save ?>" id="<?php echo $this->button_save ?>" value="<?php _e('Save Changes', $this->plugin_constant ) ?>" />
+			</p>
 		</form>
 		</div>
 		<?php
@@ -201,7 +204,7 @@ class WP_PARSEDOWN extends PluginAbstract {
 	 *
 	 */
 	public function log ( $message, $log_level = LOG_WARNING ) {
-		if ( !isset ( $this->options['log'] ) || $this->options['log'] != 1 )
+		if ( !isset ( $this->options['debug'] ) || $this->options['debug'] != 1 )
 			return false;
 		else
 			$this->utils->log ( $this->plugin_constant, $message, $log_level );
@@ -211,8 +214,8 @@ class WP_PARSEDOWN extends PluginAbstract {
 	 *
 	 */
 	public function markdown_on_the_fly ( $markdown ) {
-		$post = get_the_post();
-		$this->log ( sprintf ( __('WP-Parsedown parsing post: %s',  $post->ID ) ) );
+		$post = get_post();
+		$this->log ( sprintf ( __('parsing post: %s', $this->plugin_constant),  $post->ID ) );
 		return $this->parsedown->text ( $markdown );
 	}
 
@@ -225,7 +228,7 @@ $wp_parsedown_defaults = array (
 	'debug' => 0,
 );
 
-$wp_parsedown = new WP_GHOST ( 'wp-parsedown', '0.1', 'WP-Parsedown', $wp_parsedown_defaults );
+$wp_parsedown = new WP_PARSEDOWN ( 'wp-parsedown', '0.1', 'WP-Parsedown', $wp_parsedown_defaults );
 
 
 ?>
