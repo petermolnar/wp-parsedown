@@ -212,7 +212,7 @@ class WP_PARSEDOWN extends PluginAbstract {
 	 */
 	public function markdown_on_the_fly ( $markdown ) {
 		$post = get_the_post();
-		$this->log ( sprintf ( __('WP-Parsedown parsing post: %s',  $post->ID ) );
+		$this->log ( sprintf ( __('WP-Parsedown parsing post: %s',  $post->ID ) ) );
 		return $this->parsedown->text ( $markdown );
 	}
 
