@@ -4,7 +4,7 @@ Donate link:
 Tags: markdown, editor, parsedown
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 0.1.1
+Stable tag: 0.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,6 +21,12 @@ Parse the_content with [Parsedown Extra](http://www.parsedown.org/demo?extra=1) 
 2. Activate the plugin through the `Plugins` menu in WordPress ( site or Network wide )
 
 == Changelog ==
+
+= 0.2 =
+*2014-09-23*
+
+* added removal of wpautop filters; they are not needed when Parsedown is doing it's job
+* updated parsedown libs
 
 = 0.1.1 =
 *2014-09-06*

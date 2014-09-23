@@ -3,7 +3,7 @@
 Plugin Name: WP-Parsedown
 Plugin URI: https://github.com/petermolnar/wp-parsedown
 Description: [Parsedown Extra](www.parsedown.org/demo?extra=1) on-the-fly
-Version: 0.1.1
+Version: 0.2
 Author: Peter Molnar <hello@petermolnar.eu>
 Author URI: https://petermolnar.eu/
 License: GPLv3
@@ -56,6 +56,8 @@ class WP_PARSEDOWN extends PluginAbstract {
 		/* display markdown */
 		add_filter( 'the_content', array(&$this, 'markdown_on_the_fly'), 9 );
 
+		remove_filter( 'the_content', 'wpautop' );
+		remove_filter( 'the_excerpt', 'wpautop' );
 	}
 
 
