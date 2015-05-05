@@ -3,7 +3,7 @@
 Plugin Name: WP-Parsedown
 Plugin URI: https://github.com/petermolnar/wp-parsedown
 Description: [Parsedown Extra](www.parsedown.org/demo?extra=1) on-the-fly
-Version: 0.3
+Version: 0.4
 Author: Peter Molnar <hello@petermolnar.eu>
 Author URI: https://petermolnar.eu/
 License: GPLv3
