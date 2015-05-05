@@ -26,6 +26,8 @@ Parse the_content with [Parsedown Extra](http://www.parsedown.org/demo?extra=1) 
 *2015-05-05*
 
 * updating Parsedown and Parsedown Extra libraries
+* removing wp-common dependancy
+* changing debug log method
 
 = 0.2 =
 *2014-09-23*
