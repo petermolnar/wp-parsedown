@@ -3,8 +3,8 @@ Contributors: cadeyrn
 Donate link:
 Tags: markdown, editor, parsedown
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 0.2
+Tested up to: 4.2.1
+Stable tag: 0.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -21,6 +21,11 @@ Parse the_content with [Parsedown Extra](http://www.parsedown.org/demo?extra=1) 
 2. Activate the plugin through the `Plugins` menu in WordPress ( site or Network wide )
 
 == Changelog ==
+
+= 0.3 =
+*2015-05-05*
+
+* updating Parsedown and Parsedown Extra libraries
 
 = 0.2 =
 *2014-09-23*
