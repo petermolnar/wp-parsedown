@@ -34,7 +34,7 @@ class WP_PARSEDOWN {
 		$post = get_post();
 
 		if ( defined( 'WP_DEBUG' ) && WP_DEBUG == true ) {
-			$message = sprintf ( __('parsing post: %s', $this->plugin_constant),  $post->ID );
+			$message = sprintf ( __('parsing post: %s'),  $post->ID );
 			error_log(  __CLASS__ . ": " . $message );
 		}
 
